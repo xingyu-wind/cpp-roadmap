@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ 外部窗口运行",
+            "type": "cppdbg",
+            "request": "launch",
+
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            
+            "preLaunchTask": "C/C++: g++.exe 生成活动文件",
+
+            "externalConsole": false,
+
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb.exe"
+        }
+    ]
+}
+// 此文件负责告诉vs code用哪个GDB，调试哪个.exe
