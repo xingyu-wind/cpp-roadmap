@@ -378,6 +378,8 @@ git status --ignored
 
 `.gitignore` 不会自动停止跟踪已经提交过的文件。
 
+语法：`@("*.exe", "*.o", "*.out", "*.obj") | Set-Content .gitignore`
+
 ---
 
 ## 10. 分支基础
@@ -748,6 +750,7 @@ git status
 | `git restore 文件名` | 丢弃工作区修改 |
 | `git restore --staged 文件名` | 撤销暂存但保留修改 |
 | `git revert 提交编号` | 用新提交撤销旧提交 |
+| `@("*.exe", "*.o", "*.out", "*.obj") &#124; Set-Content .gitignore` | 创建.ignore文件 |
 | `git branch` | 查看分支 |
 | `git switch -c 名称` | 创建并切换分支 |
 | `git switch main` | 切换到 main |
